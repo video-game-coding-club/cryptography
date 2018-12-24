@@ -1,0 +1,14 @@
+---
+
+language: node_js
+node_js:
+  - "node"
+
+cache: npm
+
+jobs:
+  include:
+    - stage: Prepare cache
+      script: true
+    - stage: Run tests
+      script: npm test
