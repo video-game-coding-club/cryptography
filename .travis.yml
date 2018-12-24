@@ -7,8 +7,11 @@ cache:
   directories:
     - "${HOME}/.npm"
 
+before_install:
+  - npm install --global npm
+
 install:
-  - npm install
+  - npm ci
 
 jobs:
   include:
