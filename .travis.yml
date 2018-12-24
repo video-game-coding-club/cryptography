@@ -12,6 +12,7 @@ before_install:
 
 install:
   - npm ci
+  - bundle install --deployment
 
 jobs:
   include:
