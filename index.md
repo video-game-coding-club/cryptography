@@ -15,14 +15,29 @@ implementation.
 
 # Encrypt a plain text message
 
-<div id="algorithm">
-  <select>
-    <option value="cesar">Cesar Cipher</option>
-  </select>
-</div>
-
-<textarea rows="4" cols="80">
-Please enter your plaintext message...
-</textarea>
-
-<button type="button">Encrypt!</button>
+<table style="width:100%">
+  <tr>
+    <td>
+      <div id="algorithm">
+        <select>
+          <option value="cesar">Cesar Cipher</option>
+        </select>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div id="plaintext">
+        <textarea rows="4" cols="80">
+Please enter your plaintext message and then press the Encrypt button
+below...
+        </textarea>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <button type="button">Encrypt!</button>
+    </td>
+  </tr>
+</table>
