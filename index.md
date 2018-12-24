@@ -24,3 +24,5 @@ implementation.
 <textarea rows="4" cols="80">
 Please enter your plaintext message...
 </textarea>
+
+<button type="button">Encrypt!</button>
