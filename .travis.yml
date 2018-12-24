@@ -4,7 +4,12 @@ language: node_js
 node_js:
   - "node"
 
-cache: npm
+cache:
+  - npm
+  - bundle
+
+install:
+  - bundle install
 
 jobs:
   include:
