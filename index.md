@@ -20,3 +20,9 @@ implementation.
     <option value="cesar">Cesar Cipher</option>
   </select>
 </div>
+
+<textarea rows="4" cols="80">
+Please enter your plaintext message...
+</textarea>
+
+<button type="button">Encrypt!</button>
