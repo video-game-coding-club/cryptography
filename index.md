@@ -12,3 +12,11 @@ Please check out [the deployed webpage](https://video-game-coding-club.github.io
 This project contains experiments in cryptography. The goal is to
 learn about different cryptography algorithms and their
 implementation.
+
+# Encrypt a plain text message
+
+<div id="algorithm">
+  <select>
+    <option value="cesar">Cesar Cipher</option>
+  </select>
+</div>
