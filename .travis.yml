@@ -1,10 +1,14 @@
 ---
 
-language: node_js
-node_js:
-  - "node"
+language: ruby
 
-cache: npm
+cache:
+  bundler: true
+  directories:
+    - "${HOME}/.npm"
+
+install:
+  - npm install
 
 jobs:
   include:
