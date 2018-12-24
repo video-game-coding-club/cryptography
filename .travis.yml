@@ -1,10 +1,17 @@
 ---
 
-language: node_js
-node_js:
-  - "node"
+language: ruby
 
-cache: npm
+cache:
+  bundler: true
+  directories:
+    - "${HOME}/.npm"
+
+before_install:
+  - npm install --global npm
+
+install:
+  - npm ci
 
 jobs:
   include:
