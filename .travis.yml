@@ -12,6 +12,7 @@ before_install:
 
 install:
   - npm ci
+  - bundle install
 
 jobs:
   include:
@@ -19,3 +20,7 @@ jobs:
       script: true
     - stage: Run tests
       script: npm test
+    - stage: Test webpage
+      script:
+        - bundle exec jekyll build
+        - bundle exec htmlproofer ./_site --disable-external
