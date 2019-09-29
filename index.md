@@ -13,9 +13,11 @@ learn about different cryptographic algorithms.
 # Glossary
 
 * Plaintext
+
   The plaintext is the text we want to encrypt.
 
 * Ciphertext
+
   The ciphertext is the encrypted plaintext.
 
 # Encryption Methods
