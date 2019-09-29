@@ -3,9 +3,12 @@
 language: ruby
 
 cache:
-  bundler: true
   directories:
-    - "${HOME}/.npm"
+    - "${HOME}/.bundle"
+    #- "${HOME}/.gem"
+    #- "${HOME}/.npm"
+    #- "${HOME}/.nvm"
+    #- "${HOME}/.rvm"
 
 before_install:
   - npm install --global npm
@@ -16,11 +19,9 @@ install:
 
 jobs:
   include:
-    - stage: Prepare cache
-      script: true
     - stage: Run tests
       script: npm test
-    - stage: Test webpage
+    - stage: Build and test webpage
       script:
         - bundle exec jekyll build
         - bundle exec htmlproofer ./_site --disable-external
