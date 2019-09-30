@@ -54,3 +54,50 @@ is its own inverse; that is, to undo ROT13, the same algorithm is
 applied, so the same action can be used for encoding and decoding
 
 ![Example for ROT13](assets/ROT13_table_with_example.svg)
+
+## The Challenge
+
+Under your desk you find the following message. You suspect that it is
+encrypted using the Caesar Cipher. Your task is the following:
+
+1. Decrypt the message
+2. Write up what you did to find the cleartext message. This
+   description should include more details on the cipher, i.e. the
+   shift.
+3. As a bonus see if you can find out more about the cleartext.
+
+The write-up should be a simple textfile. Add this textfile to the
+repository on GitHub. Then create a pull request against that text
+file.
+
+Good luck!
+
+	ofoxlopyboroqydovomdbymedon,tkcyxgkcrkfsxqkbyddoxnki.rogyuosxdrolkmuco
+	kdypkcmryyvlec,xydcebogroborogkc,ryvnsxqrkxncgsdrkqsbvronsnx'duxyg.drk
+	dgkcx'dxomocckbsvidrobyddoxzkbd.droqsbvgkcmedo,ledromyevnx'dpsqeboyedg
+	rycrogkcybgrkdrogkcnysxqdrobo.rockdezkxnbellonrscoioc,dbisxqdydrsxu.kp
+	ognyjoxusncczbkgvonsxdrocokdcsxpbyxdyprsw,vscdoxsxqdyszync,dkvusxq,ybc
+	voozsxq.droikvvvyyuonkbyexnrsckqo...pspdoox?cshdoox?yuki,drkdgkccmkbi.
+	ronsnx'duxygrscygxkqo.drolecbewlvonkvyxqklewzibykn.yeddrogsxnygc,nocob
+	dbyvvonliexnobklbsqrdlveocui.tkcyxgkczboddiceboronsnx'dvsfosxdronocobd
+	.rodbsondydrsxulkmu...drovkcddrsxqrobowowlobon...droqsbvcaeoojonrscrkx
+	n."tkcyx,iyeyuki?"crogybopknontokxc,rsusxqlyydc,kxnkpvoomocxyglykbnsxq
+	tkmuod.robmrymyvkdolbygxrksbgkcmedmryzzikxnexofox,gsdrdrsxcdbkxnclbksn
+	onnygxdrocsnoc.crogyboxywkuoez,vsuocrogkcdbisxqxyddynbkgkddoxdsyxdyrob
+	covp;ledsdnsnx'dgybu.crogkccobsyecvizboddi.roboioccoowondymrkxqomyvybv
+	suokukvosnycmyzo-lbygx,lveo,kxnqboox.tkcyxvodqyyprobrkxn."ew,snyx'd-"s
+	xdropbyxdypdrolec,kdokmrobcryedon,"kvvbsqrd,mezmkuoc,vscdoxez!"droqeig
+	kcylfsyecvikmykmr.rsclkcolkvvmkzgkczevvonvygyfobrscrksb,cyiyemyevntecd
+	coorscloknioioc.rorknkgscziqykdookxnkcyebpkmo,vsuoro'nokdoxcywodrsxqwy
+	vni.rscleppkbwckxnmrocdzecronkqksxcdklbsqrdybkxqozyvycrsbd.rscxivyxgyb
+	uyedzkxdckxnxsuocgoboczydvoccgrsdo.kgrscdvorexqpbywrscxomu,kxnkwoqkzry
+	xogkcmvszzondyrsclovd.rogyevn'fovyyuonzboddicmkbisprorknx'dlooxpsfopyy
+	djoby.groxrocdyynezsxdrokscvo,yxoypdrocdenoxdcmkvvon,"cdkxnez,mykmrron
+	qo!""srokbndrkd!"dromykmrcmkxxondrolecpybdroyppoxnob.droxrscoiocpshony
+	xtkcyx,kxnrsccmygvnoozoxon.ktyvdgoxdnygxtkcyx'cczsxo.rogkccebodromykmr
+	uxogronsnx'dlovyxqdrobo.rogkcqysxqdymkvvtkcyxyed,nowkxngrkdrogkcnysxqy
+	xdrolec?kxntkcyxgyevnx'drkfokmveogrkddycki.ledmykmrronqovyyuonkgkikxnm
+	vokbonrscdrbykd."go'vvkbbsfosxpsfowsxedoc!cdkigsdriyebzkbdxob.nyx'dvyc
+	oiyebgybucrood.kxnspkxiypiyezbomsyecvsddvomezmkuocmkecokxidbyelvoyxdrs
+	cdbsz,sgsvvzobcyxkvvicoxniyelkmudymkwzecdrorkbngki."rozsmuonezklkcolkv
+	vlkdkxnwknovsuorogkcrsddsxqkrywob.
