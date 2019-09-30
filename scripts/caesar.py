@@ -2,6 +2,7 @@
 
 import argparse
 import sys
+import textwrap
 
 
 def shift_character(a, shift):
@@ -50,7 +51,9 @@ def main():
     for line in [line.strip() for line in cleartext]:
         for c in line:
             ciphertext += shift_character(c, options.shift)
-    print(ciphertext)
+
+    for line in textwrap.wrap(ciphertext):
+        print(line)
 
 
 if __name__ == "__main__":
