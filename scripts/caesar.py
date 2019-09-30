@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import argparse
+import sys
 
 
 def shift_character(a, shift):
@@ -40,6 +41,13 @@ script can be used to decrypt a ciphertext.""")
 
 def main():
     options = parse_arguments()
+    with sys.stdin as fd:
+        cleartext = fd.readlines()
+    ciphertext = ""
+    for line in [line.strip() for line in cleartext]:
+        for c in line:
+            ciphertext += shift_character(c, options.shift)
+    print(ciphertext)
 
 
 if __name__ == "__main__":
