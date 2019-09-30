@@ -21,7 +21,7 @@ jobs:
   include:
     - stage: Run tests
       script:
-        - npm test
+        - # npm test
         - python -m unittest tests.test_caesar
     - stage: Build and test webpage
       script:
