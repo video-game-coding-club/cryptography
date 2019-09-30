@@ -36,12 +36,6 @@ it in his private correspondence.
 
 ![Caesar Cipher](assets/Caesar_cipher_left_shift_of_3.svg)
 
-| Plaintext | Ciphertext |
-| --------: | :--------- |
-| D         | A          |
-| E         | B          |
-| F         | C          |
-
 ### ROT13
 
 A special case of the Caesar cipher is known as
