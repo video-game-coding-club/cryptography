@@ -5,10 +5,10 @@ language: ruby
 cache:
   directories:
     - "${HOME}/.bundle"
-    #- "${HOME}/.gem"
-    #- "${HOME}/.npm"
-    #- "${HOME}/.nvm"
-    #- "${HOME}/.rvm"
+    - "${HOME}/.gem"
+    - "${HOME}/.npm"
+    - "${HOME}/.rvm"
+    - "${PWD}/node_modules"
 
 before_install:
   - npm install --global npm
