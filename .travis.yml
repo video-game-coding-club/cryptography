@@ -20,7 +20,9 @@ install:
 jobs:
   include:
     - stage: Run tests
-      script: npm test
+      script:
+        - # npm test
+        - python -m unittest tests.test_caesar
     - stage: Build and test webpage
       script:
         - bundle exec jekyll build
