@@ -11,6 +11,10 @@ class TestCaesarCipher(unittest.TestCase):
         self.assertEqual(shift_character("z", 1), "a")
         self.assertEqual(shift_character("Z", 2), "b")
         self.assertEqual(shift_character("1", 2), "1")
+        self.assertEqual(shift_character(",", 2), ",")
+        self.assertEqual(shift_character(".", 2), ".")
+        self.assertEqual(shift_character("(", 2), "(")
+        self.assertEqual(shift_character(")", 2), ")")
         with self.assertRaisesRegexp(Exception, "Illegal input"):
             shift_character("$", 1)
         with self.assertRaisesRegexp(Exception, "too long"):
