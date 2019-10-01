@@ -51,8 +51,9 @@ applied, so the same action can be used for encoding and decoding
 
 ## The Challenge
 
-Under your desk you find the following message. You suspect that it is
-encrypted using the Caesar Cipher. Your task is the following:
+One day at school you find the following message under your desk. You
+suspect that it is encrypted using the Caesar Cipher. Your task is the
+following:
 
 1. Decrypt the message
 2. Write up what you did to find the cleartext message. This
