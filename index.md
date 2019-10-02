@@ -49,6 +49,15 @@ applied, so the same action can be used for encoding and decoding
 
 ![Example for ROT13](assets/ROT13_table_with_example.svg)
 
+# Cryptoanalysis
+
+## Brute Force Attack
+
+In [cryptography](https://en.wikipedia.org/wiki/Cryptography) a
+[brute-force attack](https://en.wikipedia.org/wiki/Brute-force_attack)
+consists of the attacker trying out all possible keys until the
+cleartext is found.
+
 ## The Challenge
 
 One day at school you find the following message under your desk. You
