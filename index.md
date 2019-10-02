@@ -96,3 +96,7 @@ Good luck!
 	oiyebgybucrood.kxnspkxiypiyezbomsyecvsddvomezmkuocmkecokxidbyelvoyxdrs
 	cdbsz,sgsvvzobcyxkvvicoxniyelkmudymkwzecdrorkbngki."rozsmuonezklkcolkv
 	vlkdkxnwknovsuorogkcrsddsxqkrywob.
+
+## Solution Entries
+
+* [Template](template.md)
