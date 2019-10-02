@@ -20,6 +20,17 @@ learn about different cryptographic algorithms.
 
   The ciphertext is the encrypted plaintext.
 
+* Cipher
+
+    The cryptographic algorithm used to encrypt the plaintext and
+    decrypt the ciphertext.
+
+* Cryptographyic Key
+
+    A piece of information that determines the output of the
+    cryptographic algorithm (cipher) used. This information is the
+    secret that the sender and the recipient need to share.
+
 # Encryption Methods
 
 ## Caesar Cipher
