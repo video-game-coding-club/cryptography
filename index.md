@@ -20,6 +20,17 @@ learn about different cryptographic algorithms.
 
     The ciphertext is the encrypted plaintext.
 
+* Cipher
+
+    The cryptographic algorithm used to encrypt the plaintext and
+    decrypt the ciphertext.
+
+* Cryptographyic Key
+
+    A piece of information that determines the output of the
+    cryptographic algorithm (cipher) used. This information is the
+    secret that the sender and the recipient need to share.
+
 # Encryption Methods
 
 ## Caesar Cipher
@@ -49,6 +60,15 @@ applied, so the same action can be used for encoding and decoding
 
 ![Example for ROT13](assets/ROT13_table_with_example.svg)
 
+# Cryptoanalysis
+
+## Brute Force Attack
+
+In [cryptography](https://en.wikipedia.org/wiki/Cryptography) a
+[brute-force attack](https://en.wikipedia.org/wiki/Brute-force_attack)
+consists of the attacker trying out all possible keys until the
+cleartext is found.
+
 ## The Challenge
 
 One day at school you find the following message under your desk. You
@@ -66,6 +86,15 @@ repository on GitHub. Then create a pull request against that text
 file.
 
 Good luck!
+
+### P.S. A hint
+
+Think about how many keys (i.e. possible shifts) you can chose from
+using the Caesar Cipher. One possible way of attacking the ciphertext
+is a so called brute-force attack in which you try out all keys until
+you find the right one.
+
+### The secret message
 
 	ofoxlopyboroqydovomdbymedon,tkcyxgkcrkfsxqkbyddoxnki.rogyuosxdrolkmuco
 	kdypkcmryyvlec,xydcebogroborogkc,ryvnsxqrkxncgsdrkqsbvronsnx'duxyg.drk
