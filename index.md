@@ -87,6 +87,15 @@ file.
 
 Good luck!
 
+### P.S. A hint
+
+Think about how many keys (i.e. possible shifts) you can chose from
+using the Caesar Cipher. One possible way of attacking the ciphertext
+is a so called brute-force attack in which you try out all keys until
+you find the right one.
+
+### The secret message
+
 	ofoxlopyboroqydovomdbymedon,tkcyxgkcrkfsxqkbyddoxnki.rogyuosxdrolkmuco
 	kdypkcmryyvlec,xydcebogroborogkc,ryvnsxqrkxncgsdrkqsbvronsnx'duxyg.drk
 	dgkcx'dxomocckbsvidrobyddoxzkbd.droqsbvgkcmedo,ledromyevnx'dpsqeboyedg
