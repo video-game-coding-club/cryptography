@@ -23,13 +23,16 @@ jobs:
     - stage: Lint scripts
       python: 3.6
       script: tox -e pep8
-    - stage: Test scripts
+    - stage: Test JavaScript scripts
+      script:
+        - # npm test
+    - stage: Test Python scripts
       python: 2.7
       env: TOXENV=py27
       script:
         - # npm test
         - tox
-    - stage: Test scripts
+    - stage: Test Python scripts
       python: 3.6
       env: TOXENV=py36
       script:
