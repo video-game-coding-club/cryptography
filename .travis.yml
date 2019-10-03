@@ -1,6 +1,6 @@
 ---
 
-language: ruby
+language: python
 
 cache:
   directories:
@@ -12,6 +12,7 @@ cache:
 
 before_install:
   - npm install --global npm
+  - pip install tox
 
 install:
   - npm ci
@@ -19,11 +20,24 @@ install:
 
 jobs:
   include:
-    - stage: Run tests
+    - stage: Lint scripts
+      python: 3.6
+      env: TOXENV=pep8
+      script: tox
+    - stage: Test scripts and webage
       script:
         - # npm test
-        - python -m unittest tests.test_caesar
-    - stage: Build and test webpage
+    - stage: Test scripts and webage
+      python: 2.7
+      env: TOXENV=py27
+      script:
+        - tox
+    - stage: Test scripts and webage
+      python: 3.6
+      env: TOXENV=py36
+      script:
+        - tox
+    - stage: Test scripts and webage
       script:
         - bundle exec jekyll build
         - bundle exec htmlproofer ./_site --disable-external
