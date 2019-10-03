@@ -22,7 +22,8 @@ jobs:
   include:
     - stage: Lint scripts
       python: 3.6
-      script: tox -e pep8
+      env: TOXENV=pep8
+      script: tox
     - stage: Test scripts and webage
       script:
         - # npm test
@@ -30,7 +31,6 @@ jobs:
       python: 2.7
       env: TOXENV=py27
       script:
-        - # npm test
         - tox
     - stage: Test scripts and webage
       python: 3.6
