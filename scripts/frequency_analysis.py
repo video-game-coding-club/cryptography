@@ -16,6 +16,7 @@ def read_ciphertext():
 
 def main(options):
     ciphertext = read_ciphertext()
+    print(ciphertext)
     # Count letters
     # Sort by frequency
     # Print frequencies
