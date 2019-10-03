@@ -4,7 +4,6 @@ title: "Welcome to Cryptography"
 ---
 
 [![Build Status](https://www.travis-ci.com/video-game-coding-club/cryptography.svg?branch=master)](https://www.travis-ci.com/video-game-coding-club/cryptography)
-
 [![CircleCI](https://circleci.com/gh/video-game-coding-club/cryptography.svg?style=svg)](https://circleci.com/gh/video-game-coding-club/cryptography)
 
 # Introduction
