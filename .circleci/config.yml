@@ -1,0 +1,105 @@
+---
+
+version: 2.0
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - pep8
+      - webpage
+      - py27:
+          requires:
+            - pep8
+      - py36:
+          requires:
+            - pep8
+  deploy:
+    jobs:
+      - deploy:
+          filters:
+            tags:
+              only: /^v[0-9]+([.0-9]+)*/
+            branches:
+              ignore: /.*/
+  periodic:
+    triggers:
+      - schedule:
+          cron: "0 0 1 * *"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - pep8
+      - py27:
+          requires:
+            - pep8
+      - py36:
+          requires:
+            - pep8
+
+jobs:
+  base: &test-template
+    docker:
+      - image: circleci/python:3.6
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ .Revision }}
+            - v1-dependencies-
+      - run:
+          name: Install dependencies
+          command: |
+            virtualenv venv
+            ./venv/bin/pip install tox
+      - run:
+          name: Run tests
+          command: ./venv/bin/tox -e ${CIRCLE_STAGE}
+      - save_cache:
+          key: v1-dependencies-{{ .Revision }}
+          paths:
+            - ./venv
+            - ./.tox
+
+  pep8:
+    <<: *test-template
+
+  py27:
+    <<: *test-template
+    docker:
+      - image: circleci/python:2.7
+
+  py36:
+    <<: *test-template
+
+  webpage:
+    <<: *test-template
+    docker:
+      - image: circleci/ruby:2.4-node
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ .Revision }}
+            - v1-dependencies-
+      - run:
+          name: Install dependencies
+          command: |
+            bundle install
+      - run:
+          name: Build webpage
+          command: bundle exec jekyll build
+      - run:
+          name: Test webpage
+          command: bundle exec htmlproofer ./_site --disable-external
+      - save_cache:
+          key: v1-dependencies-{{ .Revision }}
+          paths:
+            - ./node_modules
+            - ${HOME}/.gem
+            - ${HOME}/.bundle
+
+  deploy:
+    <<: *test-template
