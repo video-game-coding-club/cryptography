@@ -76,8 +76,6 @@ jobs:
 
   webpage:
     <<: *test-template
-    docker:
-      - image: circleci/ruby:2.4-node
     steps:
       - checkout
       - restore_cache:
@@ -87,6 +85,7 @@ jobs:
       - run:
           name: Install dependencies
           command: |
+            sudo apt install -y gem bundler
             bundle install
       - run:
           name: Build webpage
