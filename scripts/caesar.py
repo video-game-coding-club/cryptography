@@ -37,6 +37,10 @@ def parse_arguments():
 plaintext given on standard input. If the shift is negative, the
 script can be used to decrypt a ciphertext.""")
     parser.add_argument(
+        "FILE",
+        default="-",
+        help="The input file (use '-' for standard input)")
+    parser.add_argument(
         "--shift",
         type=int,
         default=0,
@@ -46,8 +50,12 @@ script can be used to decrypt a ciphertext.""")
 
 def main():
     options = parse_arguments()
-    with sys.stdin as fd:
-        cleartext = fd.readlines()
+    if options.FILE == "-":
+        with sys.stdin as fd:
+            cleartext = fd.readlines()
+    else:
+        with open(options.FILE) as fd:
+            cleartext = fd.readlines()
     ciphertext = ""
     for line in [line.strip() for line in cleartext]:
         for c in line:
