@@ -67,7 +67,7 @@ def count_letters(text):
     """Count the letter frequencies in 'text'
 
     Count the letter frequency in 'text'. The output is a dictionary
-    {'LETTER': COUNT}.
+    {'LETTER': { "count": COUNT, "frequency": FREQUENCY(in %) }.
 
     """
 
