@@ -17,7 +17,7 @@ def shift_character(a, shift):
     raised. The output is the shifted letter.
 
     """
-    a = a.lower().strip()
+    a = a.upper().strip()
     if len(a) == 0:
         return ""
     if len(a) > 1:
