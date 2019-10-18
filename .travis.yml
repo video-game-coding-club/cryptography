@@ -22,7 +22,7 @@ jobs:
   include:
     - stage: Lint scripts
       python: 3.6
-      env: TOXENV=pep8
+      env: TOXENV=lint
       script: tox
     - stage: Test scripts and webage
       script:
