@@ -130,4 +130,4 @@ you find the right one.
 ## Solution Entries
 
 * [Template](template.md)
-* [Lucas Solution](challenge1_lucas.md)
+* [Lucas Solution](challenge_1/lucas.md)
