@@ -6,14 +6,14 @@ workflows:
   version: 2
   build:
     jobs:
-      - pep8
+      - lint
       - webpage
       - py27:
           requires:
-            - pep8
+            - lint
       - py36:
           requires:
-            - pep8
+            - lint
   deploy:
     jobs:
       - deploy:
@@ -31,13 +31,13 @@ workflows:
               only:
                 - master
     jobs:
-      - pep8
+      - lint
       - py27:
           requires:
-            - pep8
+            - lint
       - py36:
           requires:
-            - pep8
+            - lint
 
 jobs:
   base: &test-template
@@ -63,7 +63,7 @@ jobs:
             - ./venv
             - ./.tox
 
-  pep8:
+  lint:
     <<: *test-template
 
   py27:
