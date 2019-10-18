@@ -9,12 +9,12 @@ def shift_character(a, shift):
     """Shift the character by shift positions in the alphabet.
 
     The input letter a is shifted by shift positions in the alphabet.
-    The letter is lowercased first. The alphabet wraps beyond 'z' back
-    to 'a'. If the input letter is a digit, that digit is returned. If
-    the input letter is a punctuation character in [',', '.', '(',
-    ')', "'", '"', "?", ";", "!", "-"] that character is returned. If
-    the input letter is anything else an Exception is raised. The
-    output is the shifted letter.
+    The letter is upper cased first. The alphabet wraps beyond 'z'
+    back to 'a'. If the input letter is a digit, that digit is
+    returned. If the input letter is a punctuation character in [',',
+    '.', '(', ')', "'", '"', "?", ";", ":", "!", "-"] that character
+    is returned. If the input letter is anything else an Exception is
+    raised. The output is the shifted letter.
 
     """
     a = a.lower().strip()
@@ -25,8 +25,8 @@ def shift_character(a, shift):
     if a.isdigit():
         return a
     if a.isalpha():
-        return chr(ord("a") + (ord(a) - ord("a") + shift) % 26)
-    if a in [",", ".", ";", "!", "(", ")", "'", '"', "?", "-"]:
+        return chr(ord("A") + (ord(a) - ord("A") + shift) % 26)
+    if a in [",", ".", ";", ":", "!", "(", ")", "'", '"', "?", "-"]:
         return a
     raise Exception("Illegal input (received '%s')" % a)
 

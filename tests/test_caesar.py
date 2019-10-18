@@ -14,6 +14,7 @@ class TestCaesarCipher(unittest.TestCase):
         self.assertEqual(shift_character(",", 2), ",")
         self.assertEqual(shift_character(".", 2), ".")
         self.assertEqual(shift_character(";", 2), ";")
+        self.assertEqual(shift_character(":", 2), ":")
         self.assertEqual(shift_character("!", 2), "!")
         self.assertEqual(shift_character("(", 2), "(")
         self.assertEqual(shift_character(")", 2), ")")
