@@ -61,7 +61,8 @@ def main():
         for c in line:
             ciphertext += shift_character(c, options.shift)
 
-    for line in textwrap.wrap(ciphertext):
+    for line in textwrap.wrap(
+            ciphertext, break_long_words=True, break_on_hyphens=False):
         print(line)
 
 
