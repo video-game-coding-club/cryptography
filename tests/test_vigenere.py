@@ -1,5 +1,5 @@
 import unittest
-from scripts.vigenere import shift_character, check_passphrase
+from scripts.vigenere import shift_character, check_passphrase, encrypt, decrypt
 
 
 class TestVigenereCipher(unittest.TestCase):
@@ -30,5 +30,13 @@ class TestVigenereCipher(unittest.TestCase):
     def test_check_passphrase(self):
         self.assertEqual(check_passphrase("a"), "A")
         self.assertEqual(check_passphrase("aB"), "AB")
-        with self.assertRaisesRegex(Exception, "alphabet"):
+        with self.assertRaisesRegexp(Exception, "alphabet"):
             check_passphrase("a!")
+
+    def test_encrypt(self):
+        self.assertEqual(encrypt("A", "A"), "A")
+        self.assertEqual(encrypt("ABC", "B"), "BCD")
+        self.assertEqual(encrypt("ABCDEFG", "AB"), "ACCEEGG")
+
+    def test_encrypt(self):
+        self.assertEqual(decrypt("ACCEEGG", "AB"), "ABCDEFG")

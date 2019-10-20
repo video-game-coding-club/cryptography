@@ -1,6 +1,8 @@
 #!/usr/bin/python
 
 import argparse
+import sys
+from textwrap import wrap
 
 
 def shift_character(a, shift):
@@ -72,9 +74,50 @@ def check_passphrase(passphrase):
     return passphrase.upper()
 
 
+def encrypt(cleartext, passphrase):
+    # type: (str, str) -> str
+    ciphertext = ""
+    shift_index = 0
+    for line in [line.strip() for line in cleartext]:
+        for c in line:
+            ciphertext += shift_character(
+                c, ord(passphrase[shift_index % len(passphrase)]) - ord("A"))
+            shift_index += 1
+    return ciphertext
+
+
+def decrypt(ciphertext, passphrase):
+    # type: (str, str) -> str
+    cleartext = ""
+    shift_index = 0
+    for line in [line.strip() for line in ciphertext]:
+        for c in line:
+            cleartext += shift_character(
+                c, -(ord(passphrase[shift_index % len(passphrase)])
+                     - ord("A")))
+            shift_index += 1
+    return cleartext
+
+
 def main(options):
     # type: (argparse.Namespace) -> None
     passphrase = check_passphrase(options.passphrase)
+
+    if options.FILE == "-":
+        with sys.stdin as fd:
+            cleartext = fd.readlines()
+    else:
+        with open(options.FILE) as fd:
+            cleartext = fd.readlines()
+
+    if options.encrypt:
+        ciphertext = encrypt(" ".join(cleartext), passphrase)
+    elif options.decrypt:
+        ciphertext = decrypt(" ".join(cleartext), passphrase)
+
+    for line in wrap(ciphertext, break_long_words=True,
+                     break_on_hyphens=False):
+        print(line)
 
 
 if __name__ == "__main__":
