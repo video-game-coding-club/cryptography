@@ -80,13 +80,14 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - v1-dependencies-{{ .Revision }}
-            - v1-dependencies-
+            - v1-webpage-dependencies-{{ .Revision }}
+            - v1-webpage-dependencies-
       - run:
           name: Install dependencies
           command: |
             sudo apt install -y gem bundler
-            bundle install
+            bundle install --path ${HOME}/.gem
+            bundle info jekyll
       - run:
           name: Build webpage
           command: bundle exec jekyll build
@@ -94,11 +95,11 @@ jobs:
           name: Test webpage
           command: bundle exec htmlproofer ./_site --disable-external
       - save_cache:
-          key: v1-dependencies-{{ .Revision }}
+          key: v1-webpage-dependencies-{{ .Revision }}
           paths:
             - ./node_modules
-            - ${HOME}/.gem
-            - ${HOME}/.bundle
+            - ~/.gem
+            - ~/.bundle
 
   deploy:
     <<: *test-template
