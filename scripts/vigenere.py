@@ -6,6 +6,7 @@ from textwrap import wrap
 
 
 def shift_character(a, shift):
+    # type: (str, int) -> str
     """Shift the character by shift positions in the alphabet.
 
     The input letter a is shifted by shift positions in the alphabet.
