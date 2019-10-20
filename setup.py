@@ -5,5 +5,9 @@ setup(
     name="cryptography",
     version="0.1",
     packages=find_packages(),
-    scripts=["scripts/caesar.py"]
+    scripts=[
+        "scripts/caesar.py",
+        "scripts/frequency_analysis.py",
+        "scripts/vigenere.py",
+    ]
 )
