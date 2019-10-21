@@ -70,6 +70,15 @@ In [cryptography](https://en.wikipedia.org/wiki/Cryptography) a
 consists of the attacker trying out all possible keys until the
 cleartext is found.
 
+## Frequency Analysis
+
+In cryptanalysis, frequency analysis (also known as counting letters)
+is the study of the frequency of letters or groups of letters in a
+ciphertext. The method is used as an aid to breaking classical
+ciphers.
+
+![Typical letter frequencies of an English text](assets/English_letter_frequency_(frequency).svg)
+
 # Challenge 1
 
 One day at school you find the following message under your desk. You
