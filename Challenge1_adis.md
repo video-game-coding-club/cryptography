@@ -1,0 +1,40 @@
+---
+layout: default
+title: "Soulution for the amazing challenge 1"
+---
+
+# Solution
+
+evenbeforehegotelectrocuted,jasonwashavingarottenday.hewokeinthebackse
+atofaschoolbus,notsurewherehewas,holdinghandswithagirlhedidn'tknow.tha
+twasn'tnecessarilytherottenpart.thegirlwascute,buthecouldn'tfigureoutw
+hoshewasorwhathewasdoingthere.hesatupandrubbedhiseyes,tryingtothink.af
+ewdozenkidssprawledintheseatsinfrontofhim,listeningtoipods,talking,ors
+leeping.theyalllookedaroundhisage...fifteen?sixteen?okay,thatwasscary.
+hedidn'tknowhisownage.thebusrumbledalongabumpyroad.outthewindows,deser
+trolledbyunderabrightbluesky.jasonwasprettysurehedidn'tliveinthedesert
+.hetriedtothinkback...thelastthingheremembered...thegirlsqueezedhishan
+d."jason,youokay?"sheworefadedjeans,hikingboots,andafleecesnowboarding
+jacket.herchocolatebrownhairwascutchoppyanduneven,withthinstrandsbraid
+eddownthesides.sheworenomakeup,likeshewastryingnottodrawattentiontoher
+self;butitdidn'twork.shewasseriouslypretty
+.hereyesseemedtochangecolorlikeakaleidoscope-brown,blue,andgreen.jason
+letgoofherhand."um,idon't-"inthefrontofthebus,ateachershouted,"allrigh
+t,cupcakes,listenup!"theguywasobviouslyacoach.hisbaseballcapwaspulledl
+owoverhishair,soyoucouldjustseehisbeadyeyes.hehadawispygoateeandasourf
+ace,likehe'deatensomethingmoldy.hisbuffarmsandchestpushedagainstabrigh
+torangepoloshirt.hisnylonworkoutpantsandnikeswerespotlesswhite.awhistl
+ehungfromhisneck,andamegaphonewasclippedtohisbelt.hewould'velookedpret
+tyscaryifhehadn'tbeenfivefootzero.whenhestoodupintheaisle,oneofthestud
+entscalled,"standup,coachhedge!""iheardthat!"thecoachscannedthebusfort
+heoffender.thenhiseyesfixedonjason,andhisscowldeepened.ajoltwentdownja
+son'sspine.hewassurethecoachknewhedidn'tbelongthere.hewasgoingtocallja
+sonout,demandwhathewasdoingonthebus?andjasonwouldn'thaveacluewhattosay
+.butcoachhedgelookedawayandclearedhisthroat."we'llarriveinfiveminutes!
+staywithyourpartner.don'tloseyourworksheet.andifanyofyoupreciouslittle
+cupcakescauseanytroubleonthistrip,iwillpersonallysendyoubacktocampusth
+ehardway."hepickedupabaseballbatandmadelikehewashittingahomer.
+
+# How I did it
+
+*
