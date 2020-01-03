@@ -76,6 +76,9 @@ def count_letters(text):
     result = {}  # type: Dict[str, Dict[str, float]]
     total = 0  # type: int
     for l in text:
+        l = l.strip()
+        if len(l) == 0:
+            continue
         total += 1
         if l in result:
             result[l]["count"] += 1
