@@ -22,7 +22,7 @@ def shift_character(a, shift):
     if len(a) == 0:
         return ""
     if len(a) > 1:
-        raise Exception("Input too long, expected 1 character")
+        raise Exception("Input too long (got '%s', expected 1 character" % a)
     if a.isdigit():
         return a
     if a.isalpha():

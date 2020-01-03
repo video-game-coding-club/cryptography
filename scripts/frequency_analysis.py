@@ -75,14 +75,17 @@ def count_letters(text):
 
     result = {}  # type: Dict[str, Dict[str, float]]
     total = 0  # type: int
-    for l in text:
+    for letter in text:
+        letter = letter.strip()
+        if len(letter) == 0:
+            continue
         total += 1
-        if l in result:
-            result[l]["count"] += 1
+        if letter in result:
+            result[letter]["count"] += 1
         else:
-            result[l] = {"count": 1}
-    for l in result:
-        result[l]["frequency"] = result[l]["count"] / total * 100
+            result[letter] = {"count": 1}
+    for letter in result:
+        result[letter]["frequency"] = result[letter]["count"] / total * 100
     return result
 
 
