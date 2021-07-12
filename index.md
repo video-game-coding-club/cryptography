@@ -265,3 +265,7 @@ decrypt the ciphertext with the script in `scripts/caesar.py`.
     "GURA,NFVSGUNGERZVAQRQUREBSGUREBOBG'FCERFRAPR,FURJUVEYRQHCBAUVZ."LBHZN
     LTB,EBOOVR.FURQBRFA'GARRQLBHABJ."GURA,OEHGNYYL,"NAQQBA'GPBZRONPXGVYYVP
     NYYLBH."
+
+# Challenge 3
+
+The Vigenere Cipher is...
